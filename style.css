@@ -1,0 +1,188 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #000000, #4b3a1f);
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.section-home {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.section-home h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.section-home p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #eee;
+}
+
+.section-servicos, .section-portfolio, .section-contato {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-servicos h2,
+.section-portfolio h2,
+.section-contato h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffd700;
+}
+
+.servicos-lista {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servico-item {
+  background: #222;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+}
+
+.servico-item:hover {
+  transform: scale(1.05);
+}
+
+.servico-item h3 {
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.portfolio-items {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-items img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-items img:hover {
+  transform: scale(1.05);
+}
+
+.section-contato .contato-links {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.section-contato .contato-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  width: 180px;
+  box-shadow: 0 0 10px #000;
+  transition: background 0.3s ease;
+}
+
+.section-contato .contato-links a:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+.section-contato img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .servicos-lista, .portfolio-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-contato .contato-links {
+    flex-direction: column;
+  }
+}
